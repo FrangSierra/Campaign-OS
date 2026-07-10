@@ -44,6 +44,7 @@ As more Skills are added, give each one the same `fixtures/` and `runs/` pattern
 - `session-prep`: implemented with one Session 6 prep-packet rehearsal grounded in current state and QA guardrails
 - `mystery-manager`: implemented with one Session 6 scholar-case mystery-board rehearsal
 - `consequence-engine`: implemented with one post-Session-5 fallout register and Session 6 prep-window rehearsal
+- `entity-extractor`: implemented with one Session 6 candidate-entity extraction rehearsal from simulated session notes
 
 ## Review Standard
 
