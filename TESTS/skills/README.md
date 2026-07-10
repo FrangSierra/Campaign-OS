@@ -48,6 +48,7 @@ As more Skills are added, give each one the same `fixtures/` and `runs/` pattern
 - `knowledge-matrix`: implemented with one Session 6 knowledge-boundary rehearsal for branch memory and the scholar case
 - `campaign-health`: implemented with one post-Session-5 health snapshot before the first true Emon session
 - `npc-simulator`: implemented with one bounded response rehearsal for Brann and Ivy before Session 6 play
+- `lore-search`: implemented with one cited search packet for Arven, true Emon, and branch-memory relevance before Session 6
 
 ## Review Standard
 
