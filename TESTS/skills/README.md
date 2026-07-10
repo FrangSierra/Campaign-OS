@@ -43,7 +43,7 @@ As more Skills are added, give each one the same `fixtures/` and `runs/` pattern
 - `campaign-qa`: implemented with one post-Session-5 prep-risk scan against the current campaign
 - `session-prep`: implemented with one Session 6 prep-packet rehearsal grounded in current state and QA guardrails
 - `mystery-manager`: implemented with one Session 6 scholar-case mystery-board rehearsal
-- `consequence-engine`: add after prep can surface delayed fallout windows cleanly
+- `consequence-engine`: implemented with one post-Session-5 fallout register and Session 6 prep-window rehearsal
 
 ## Review Standard
 
