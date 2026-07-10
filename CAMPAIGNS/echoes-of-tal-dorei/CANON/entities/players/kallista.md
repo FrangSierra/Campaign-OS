@@ -4,14 +4,14 @@ record_type: entity
 schema_version: 1.0.0
 lifecycle_state: active
 created_at: 2026-07-10T00:00:00+02:00
-updated_at: 2026-07-10T21:10:00+02:00
-provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10
+updated_at: 2026-07-10T15:39:48+02:00
+provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10; updated by explicit human instruction on 2026-07-10 to preserve persistent carried item details
 campaign_ref: campaign-echoes-of-tal-dorei
 entity_kind: player-character
 primary_name: Kallista
 entity_status: active
 aliases: []
-current_state: Profit-motivated adventurer now back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; remembers the collapsed prologue branch, used the Heart of the Mountain to strike the decisive blow against Arven's control, and is now an independent Time Agency operative when called upon; a persistent weapon effect is preserved by explicit human instruction.
+current_state: Profit-motivated adventurer now back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; remembers the collapsed prologue branch, used the Heart of the Mountain to strike the decisive blow against Arven's control, and is now an independent Time Agency operative when called upon; she carries an axe that can intercept mortal damage meant for someone else and now bears Phirina's name after saving her in Session 5, preserved by explicit human instruction.
 character_sheet_ref: ASSETS/pdf/player-character-sheets/kallista.pdf
 relationship_refs: []
 timeline_refs:
@@ -63,4 +63,4 @@ No approved stable relationship has been attached yet.
 
 ## Notes
 
-Current character sheet PDF linked. Canon now preserves her prologue-branch experience, her decisive Session 5 stand against Arven, her Time Agency recruitment, and the existence of a persistent weapon effect retained by explicit human instruction, though the exact mechanical wording should be reconciled against the current sheet if needed.
+Current character sheet PDF linked. Canon now preserves her prologue-branch experience, her decisive Session 5 stand against Arven, her Time Agency recruitment, and the explicit human instruction that she carries an axe able to intercept mortal damage for another person and that the axe now bears Phirina's name after Session 5, though the exact mechanical wording should be reconciled against the current sheet if needed.

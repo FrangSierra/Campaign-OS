@@ -4,8 +4,8 @@ record_type: derived_state
 schema_version: 1.0.0
 lifecycle_state: active
 created_at: 2026-07-10T00:00:00+02:00
-updated_at: 2026-07-10T21:15:00+02:00
-provenance: regenerated from approved Session 1 through Session 5 canon on 2026-07-10
+updated_at: 2026-07-10T21:30:00+02:00
+provenance: regenerated from approved Session 1 through Session 5 canon on 2026-07-10; updated to include Brann Copperthumb and Ivy by explicit human approval on 2026-07-10
 campaign_ref: campaign-echoes-of-tal-dorei
 state_kind: known-npcs
 derived_status: current
@@ -13,6 +13,8 @@ derived_from_refs:
   - entity-sadek
   - entity-perry-the-parrot
   - entity-temporal-agent
+  - entity-brann-copperthumb
+  - entity-ivy
   - relationship-sadek-companion-of-perry
   - event-session-003-sadek-aged-in-forest
   - event-session-003-rune-hideout-discovery
@@ -20,11 +22,13 @@ derived_from_refs:
   - event-session-005-arven-revealed-and-rune-breaks
   - event-session-005-timeline-stabilized-and-agency-recruitment
 generated_at: 2026-07-10T21:15:00+02:00
-summary: Only recurring or important NPCs retained as Entities are listed here.
+summary: Only recurring or important NPCs retained as Entities are listed here, including approved future-facing Emon anchors that exist before first on-screen appearance.
 entity_refs:
   - entity-sadek
   - entity-perry-the-parrot
   - entity-temporal-agent
+  - entity-brann-copperthumb
+  - entity-ivy
 relationship_refs:
   - relationship-sadek-companion-of-perry
 event_refs:
@@ -47,3 +51,5 @@ notes:
 - Sadek: restored hunter who remembers the collapsed branch and now continues on the true road to Emon with the party.
 - Perry the Parrot: Sadek's companion and recurring uncanny witness, now also present in the restored timeline.
 - Arven: the former "Temporal Agent," revealed as the manipulator behind the prologue branch and apparently destroyed there, though not necessarily gone forever.
+- Brann Copperthumb: famous retired private investigator in Emon, Sadek's older cousin, and a planned recurring local anchor.
+- Ivy: young Emon information broker intended to recur as a street-level rumor and clue contact.

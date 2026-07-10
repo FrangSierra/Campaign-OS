@@ -37,6 +37,8 @@ Mark the current session-planning Working Record as the approved planning draft 
 - the record should capture what was approved and what remains flexible
 - `working_status` should normally move to `resolved` unless the human wants the plan kept open
 - `decision_ref` should point to the human approval note when one exists
+- after play, the committed plan should remain stored as prep history even if the actual session diverges
+- later canonization must rely on actual session evidence, not on the approved plan text
 
 ## Failure
 

@@ -17,6 +17,7 @@ User-facing entry point for drafting, revising, and committing a future session 
 - context synthesis grounded in current campaign state
 - draft hooks, scenes, investigation leads, NPC ideas, and continuity warnings
 - optional committed session plan
+- a durable prep artifact that can be revised before play and referenced after play without becoming canon
 
 ## Dependencies
 
@@ -30,7 +31,8 @@ User-facing entry point for drafting, revising, and committing a future session 
 - relevant approved `CANON/` records
 - relevant `STATE/` records
 - relevant `WORKING/` records, especially open continuity issues and prior plans
-- campaign planning references stored with session-planning materials
+- relevant campaign references in `REFERENCE/`
+- relevant system planning references in `RULES/`
 
 ## Files Written
 
@@ -49,6 +51,7 @@ User-facing entry point for drafting, revising, and committing a future session 
 - It should call out ideas that clash with the campaign's stated direction or current state.
 - It may recommend dropping, replacing, or postponing ideas rather than forcing them in.
 - It should load any campaign-specific lore or system planning references that have been staged for this campaign.
+- After the session is actually played, this command's output remains a historical prep record rather than evidence of what happened.
 
 ## Failure
 

@@ -4,14 +4,14 @@ record_type: entity
 schema_version: 1.0.0
 lifecycle_state: active
 created_at: 2026-07-10T00:00:00+02:00
-updated_at: 2026-07-10T21:10:00+02:00
-provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10
+updated_at: 2026-07-10T15:39:48+02:00
+provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10; updated by explicit human instruction on 2026-07-10 to preserve persistent carried item details
 campaign_ref: campaign-echoes-of-tal-dorei
 entity_kind: player-character
 primary_name: Soren
 entity_status: active
 aliases: []
-current_state: Cleric of Shar back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; retains the Lantern of Lost Souls by explicit human instruction; one defining childhood memory remains but its emotional charge has been removed; consumed the Hourglass of Returning to save Sadek, received Shar's final miracle to stop Kallista's erasure, and is now an independent Time Agency operative when called upon.
+current_state: Cleric of Shar back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; retains the Lantern of Lost Souls, which allows him to speak with the dead once per day, by explicit human instruction; one defining childhood memory remains but its emotional charge has been removed; consumed the Hourglass of Returning to save Sadek, received Shar's final miracle to stop Kallista's erasure, and is now an independent Time Agency operative when called upon.
 character_sheet_ref: ASSETS/pdf/player-character-sheets/soren.pdf
 relationship_refs:
   - relationship-soren-researches-with-phirina
@@ -65,4 +65,4 @@ Cleric who has shifted from Sarenrae to Shar, saved Sadek, preserved Kallista fr
 
 ## Notes
 
-Current character sheet PDF linked. Canon now preserves his research partnership with Phirina, his permanent shift to Shar, his decision to expend the Hourglass to save Sadek, his Session 5 miracle against Kallista's erasure, his Time Agency recruitment, and the explicit human instruction that he still retains the Lantern of Lost Souls.
+Current character sheet PDF linked. Canon now preserves his research partnership with Phirina, his permanent shift to Shar, his decision to expend the Hourglass to save Sadek, his Session 5 miracle against Kallista's erasure, his Time Agency recruitment, and the explicit human instruction that he still retains the Lantern of Lost Souls and can use it to speak with the dead once per day.

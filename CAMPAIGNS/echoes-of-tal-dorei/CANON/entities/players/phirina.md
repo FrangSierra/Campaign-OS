@@ -4,14 +4,14 @@ record_type: entity
 schema_version: 1.0.0
 lifecycle_state: active
 created_at: 2026-07-10T00:00:00+02:00
-updated_at: 2026-07-10T21:10:00+02:00
-provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10
+updated_at: 2026-07-10T15:39:48+02:00
+provenance: initialized during campaign scaffold generation; character sheet linked by explicit human instruction during Session 2 processing review on 2026-07-10; updated by approved Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10; updated by explicit human instruction on 2026-07-10 to preserve persistent carried item details
 campaign_ref: campaign-echoes-of-tal-dorei
 entity_kind: player-character
 primary_name: Phirina
 entity_status: active
 aliases: []
-current_state: Scholar-mage back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; remembers the collapsed prologue branch, sacrificed the Last Page of the Archivist for True Revelation during the Paradox Wyrm battle, and is now an independent Time Agency operative when called upon.
+current_state: Scholar-mage back on the true road to Emon with the party, Sadek, and Perry; current sheet linked; remembers the collapsed prologue branch, sacrificed the Last Page of the Archivist for True Revelation during the Paradox Wyrm battle, carries a self-writing book that answers one question truthfully each day in riddle form, and is now an independent Time Agency operative when called upon.
 character_sheet_ref: ASSETS/pdf/player-character-sheets/phirina.pdf
 relationship_refs:
   - relationship-soren-researches-with-phirina
@@ -66,4 +66,4 @@ Scholar and mage whose curiosity drove the party through the prologue branch and
 
 ## Notes
 
-Current character sheet PDF linked. Canon now preserves her symbol-puzzle work, her Session 3 knowledge trial, her Session 5 True Revelation, her Time Agency recruitment, and her approved research relationship with Soren.
+Current character sheet PDF linked. Canon now preserves her symbol-puzzle work, her Session 3 knowledge trial, her Session 5 True Revelation, her Time Agency recruitment, her approved research relationship with Soren, and the explicit human instruction that she carries a self-writing truth-book that answers one question per day in riddles.
