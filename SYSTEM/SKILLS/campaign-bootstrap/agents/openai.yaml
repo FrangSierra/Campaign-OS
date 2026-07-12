@@ -1,0 +1,4 @@
+interface:
+  display_name: "Campaign Bootstrap"
+  short_description: "Start a campaign from notes or questions"
+  default_prompt: "Use $campaign-bootstrap to start a new campaign from this folder of notes."

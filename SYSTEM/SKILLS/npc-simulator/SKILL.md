@@ -119,8 +119,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/npc-simulator/fixtures/`
 - simulation packets live under `TESTS/skills/npc-simulator/runs/`
 
-For this campaign, a strong first rehearsal should use Brann and Ivy because they are:
-
-- approved future-facing NPCs with stable role definitions
-- useful in Session 6 prep
-- risky enough that over-simulation would immediately show up as canon drift
+Use anonymized fixtures with an established NPC, a constrained scene, and enough known relationships to reveal whether the simulation drifts beyond the evidence.

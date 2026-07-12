@@ -123,9 +123,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/knowledge-matrix/fixtures/`
 - knowledge matrices live under `TESTS/skills/knowledge-matrix/runs/`
 
-For this campaign, a strong first rehearsal should compare:
-
-- the collapsed-branch memory boundary
-- the Time Agency truth
-- the visible Oren Vestrel case setup
-- Brann and Ivy's approved planning roles without overstating what they know
+Use anonymized fixtures that distinguish public rumor, player knowledge, NPC knowledge, planned reveals, and unsupported inference.

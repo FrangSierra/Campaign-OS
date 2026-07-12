@@ -1,0 +1,4 @@
+interface:
+  display_name: "NPC Creator"
+  short_description: "Design grounded NPCs through guided choices"
+  default_prompt: "Use $npc-creator to design a recurring NPC for my next session."

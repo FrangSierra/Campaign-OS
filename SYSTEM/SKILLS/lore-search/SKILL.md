@@ -114,9 +114,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/lore-search/fixtures/`
 - search packets live under `TESTS/skills/lore-search/runs/`
 
-For this campaign, a strong first rehearsal should answer a prep-facing question about:
-
-- Arven
-- the true Emon transition
-- branch-memory boundaries
-- how those topics matter before Session 6
+Use anonymized fixtures that require a cited answer spanning canon, derived state, working prep, and unresolved uncertainty.

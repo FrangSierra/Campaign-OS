@@ -1,11 +1,11 @@
 ---
 name: entity-extractor
-description: Use when the user wants to identify candidate NPCs, factions, locations, objects, or relationships from evidence, canon, prep, or imported material without automatically promoting them into canonical records. This skill proposes structured candidates, duplicates checks, and scope recommendations.
+description: Use when the user wants to identify candidate NPCs, factions, locations, objects, or relationships from evidence, canon, prep, or imported material without automatically promoting them into canonical records. This skill proposes structured candidates, duplicate checks, and scope recommendations; use npc-creator instead for deeply designing a new NPC.
 ---
 
 # Entity Extractor
 
-This skill identifies durable campaign nouns that may deserve records later. It is for proposal and triage, not automatic canon creation.
+This skill identifies durable campaign nouns that may deserve records later. It is for extraction, proposal, and triage—not automatic canon creation or deep character design.
 
 ## Read First
 
@@ -71,13 +71,15 @@ Focus on:
 
 ### Prep Cast Mode
 
-Use when the source is a plan and the user wants proposed supporting cast.
+Use when the source is a plan and the user wants to review which proposed people, places, or objects may need later records.
 
 Focus on:
 
-- prep-scoped candidates
-- why each character or place exists in the plan
+- prep-scoped candidates and their evidence or planning source
+- whether a candidate duplicates existing campaign material
 - which ideas are too thin to persist yet
+
+Route an NPC that needs personality, voice, party ties, appearance, or a detailed introduction to `npc-creator`.
 
 ## Workflow
 
@@ -93,6 +95,8 @@ Focus on:
    - recommended scope
 5. Keep uncertain motives, backstory, and interpretation out of the stable-facts line.
 6. If the user wants persistence, route proposals into `WORKING/` or a review packet before any canon write.
+
+Do not treat hooks as Entities or future events as established facts. Route playable hooks to `session-prep` or `consequence-engine`, and event proposals grounded in played evidence to `process-session`.
 
 ## Output Shape
 
@@ -121,9 +125,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/entity-extractor/fixtures/`
 - extraction packets live under `TESTS/skills/entity-extractor/runs/`
 
-For this campaign, a strong first rehearsal should use the Session 6 simulated notes because they mix:
-
-- approved future-facing NPCs already known to the campaign
-- new session-only names
-- a candidate location layer beneath Emon
-- clues that matter without yet deserving standalone object records
+Use anonymized fixtures that mix recurring candidates, session-only names, locations, and clues that may not merit persistent records.

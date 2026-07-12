@@ -41,6 +41,14 @@ Current durable repo structure is already strong:
 
 This means the repo is already ready for Skills. The right next move is not to rewrite the docs, but to add Skills that orchestrate them.
 
+### Campaign Bootstrap
+
+`campaign-bootstrap` is implemented as the entry point for new local campaigns. It supports importing a folder of existing material or starting from a guided interview, while keeping imported material out of canon until it has been reviewed through the normal flows.
+
+### NPC Creator
+
+`npc-creator` is implemented as the deep-design counterpart to the quick `SUGGEST_NPC` command. It uses entity-extraction and duplicate-check logic to ground a proposed NPC, then supports an optional interview for voice, attitude, party ties, appearance, and introduction hooks. Its output remains working material until play and approval establish canon.
+
 ## Decision Heuristic
 
 Use this rule of thumb:
@@ -417,6 +425,7 @@ If these become Skills later, recommended names are:
 - `session-prep`
 - `mystery-manager`
 - `consequence-engine`
+- `npc-creator`
 - `entity-extractor`
 - `knowledge-matrix`
 - `campaign-health`
@@ -441,6 +450,7 @@ Elevate or create as Skills:
 - `session-prep`
 - `mystery-manager`
 - `consequence-engine`
+- `npc-creator`
 
 Keep as tasks/workflows/commands:
 

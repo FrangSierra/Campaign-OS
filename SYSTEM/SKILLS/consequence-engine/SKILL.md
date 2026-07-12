@@ -128,8 +128,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/consequence-engine/fixtures/`
 - fallout registers and prep-window reports live under `TESTS/skills/consequence-engine/runs/`
 
-For this campaign, a strong first rehearsal should use:
-
-- Session 5 fallout that survived timeline restoration
-- the current Session 6 Emon prep packet
-- the current QA warning that Emon should stay grounded and not be swallowed by Time Agency pressure
+Use anonymized fixtures that include one confirmed event, several possible consequences, and a future prep question.

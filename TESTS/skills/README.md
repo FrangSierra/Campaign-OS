@@ -4,7 +4,7 @@ This folder is the safe harness for developing and reviewing Campaign OS Skills 
 
 ## Purpose
 
-- test Skills against the real `echoes-of-tal-dorei` corpus
+- test Skills against synthetic, anonymized, or deliberately shared material
 - rehearse fake roleplays, synthetic session chats, and alternative outcomes
 - keep non-canonical experiments out of `CANON/` and `STATE/`
 - leave reviewable artifacts that can be compared across iterations
@@ -12,7 +12,7 @@ This folder is the safe harness for developing and reviewing Campaign OS Skills 
 ## Boundaries
 
 - `TESTS/` is operating-system support space, not campaign truth
-- test fixtures may reference real campaign entities, events, and state
+- test fixtures must not include private campaign entities, events, or state unless the repository is intentionally private
 - test outputs must clearly label what is copied from approved canon and what is simulated
 - no skill test should write to `CANON/` or `STATE/` unless a later live run is explicitly approved
 
@@ -37,18 +37,9 @@ As more Skills are added, give each one the same `fixtures/` and `runs/` pattern
 5. `Live Pilot`
    Only after review, use the Skill on real new inputs with the normal approval pauses intact.
 
-## Current Roadmap Coverage
+## Privacy Default
 
-- `process-session`: implemented with one simulated Session 6 dry run using Brann, Ivy, and current Emon context
-- `campaign-qa`: implemented with one post-Session-5 prep-risk scan against the current campaign
-- `session-prep`: implemented with one Session 6 prep-packet rehearsal grounded in current state and QA guardrails
-- `mystery-manager`: implemented with one Session 6 scholar-case mystery-board rehearsal
-- `consequence-engine`: implemented with one post-Session-5 fallout register and Session 6 prep-window rehearsal
-- `entity-extractor`: implemented with one Session 6 candidate-entity extraction rehearsal from simulated session notes
-- `knowledge-matrix`: implemented with one Session 6 knowledge-boundary rehearsal for branch memory and the scholar case
-- `campaign-health`: implemented with one post-Session-5 health snapshot before the first true Emon session
-- `npc-simulator`: implemented with one bounded response rehearsal for Brann and Ivy before Session 6 play
-- `lore-search`: implemented with one cited search packet for Arven, true Emon, and branch-memory relevance before Session 6
+The public repository tracks this guide but ignores files placed in individual `fixtures/` and `runs/` directories. Keep private rehearsal material there locally. If you want to publish an example, anonymize it first and add it intentionally.
 
 ## Review Standard
 

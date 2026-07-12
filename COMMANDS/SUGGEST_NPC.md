@@ -2,55 +2,30 @@
 
 ## Purpose
 
-User-facing entry point for generating grounded NPC options from the current world, location, mystery, faction, or session-plan need.
+Provide a fast, read-only NPC concept when the user needs someone for a location, faction, mystery, or immediate scene. Use this as the lightweight entry point to [CREATE_NPC.md](CREATE_NPC.md).
 
 ## Inputs
 
-- `campaign_ref`
-- optional `plan_ref`
-- a role, problem, location, faction, or scene need
-- optional tone, age range, social class, or recurrence goal
+- `campaign_ref`;
+- optional `plan_ref`;
+- a role, problem, location, faction, or scene need;
+- optional tone, age range, social class, or recurrence goal.
 
 ## Outputs
 
-- one or more NPC suggestions
-- links to the campaign context that make each NPC fit
-- optional Working Record updates if the human wants the NPC added to a session plan
-
-## Dependencies
-
-- [AI_RUNTIME.md](/Users/durdin/Projects/Durdin/tal-dore-tales/SYSTEM/AI_RUNTIME.md)
-- [INVARIANTS.md](/Users/durdin/Projects/Durdin/tal-dore-tales/SYSTEM/INVARIANTS.md)
-- [TASKS/SUGGEST_NPC.md](/Users/durdin/Projects/Durdin/tal-dore-tales/TASKS/SUGGEST_NPC.md)
-
-## Files Read
-
-- relevant `STATE/` records
-- relevant `CANON/entities/`
-- relevant `CANON/relationships/`
-- relevant `STATE/known-locations.md`, `STATE/known-organizations.md`, and `STATE/known-mysteries.md`
-- optional active session-planning Working Record
-
-## Files Written
-
-- none by default
-- optional Working Record update when explicitly requested
+- one or more grounded NPC concepts;
+- the campaign context that makes each option fit;
+- a recommendation to reuse an existing NPC when that is stronger;
+- a handoff to `npc-creator` when the user wants to define personality, voice, relationships, appearance, or hooks in depth.
 
 ## Approval
 
 - Read-only NPC suggestion does not require approval.
-- Persisting NPC suggestions into a Working Record may proceed when explicitly requested.
-- NPC suggestions do not create canon Entities by themselves.
+- Persisting an option into a Working Record requires an explicit request.
+- Suggestions do not create canon Entities, Relationships, or Events.
 
 ## Constraints
 
-- Suggested NPCs must be grounded in the current world and campaign tone.
-- Suggestions should state why the NPC exists in the scene and what pressure they add.
-- Suggestions should avoid duplicating an existing NPC unless deliberate.
-- Future-facing NPC ideas remain speculative until used in play and processed through the Truth Pipeline.
-
-## Failure
-
-- NPC suggestion ignores campaign context
-- suggestion duplicates an existing NPC without intent
-- speculative NPC is treated as canon
+- Keep suggestions brief, scene-focused, and grounded in current campaign context.
+- Do not turn a quick concept into a full biography unless the user asks to continue with `npc-creator`.
+- Future-facing NPC ideas remain speculative until used in play and later processed through the Truth Pipeline.

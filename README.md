@@ -6,7 +6,7 @@ Campaign OS is a Markdown-first home for a tabletop RPG campaign.
 
 It gives a GM and an AI collaborator a shared way to keep track of what actually happened, what is still uncertain, and what is only being prepared for the next session. The aim is not to turn your game into a database or let an assistant write your canon for you. It is to make long-running campaigns easier to run without losing their history, loose ends, or human voice.
 
-The included example campaign, **Echoes of Tal Dorei**, uses Dungeons & Dragons 5.5, but the system is deliberately game-agnostic. Swap in a different campaign and a different `RULES/<system-id>/` folder, and the same operating model still applies.
+This repository intentionally ships without a live campaign. Your notes, player information, lore, and prep stay local under `CAMPAIGNS/`; the public repository contains the operating system, tools, and templates. The system is game-agnostic: use the same model with a different `RULES/<system-id>/` folder for each game.
 
 ## The short version
 
@@ -78,6 +78,21 @@ Each campaign lives in `CAMPAIGNS/<campaign-id>/` and normally contains:
 
 You do not need to create every possible subfolder on day one. Start with the stable buckets, then add narrower folders when real material calls for them.
 
+## Quick start
+
+The easiest way to begin is with the [`campaign-bootstrap`](SYSTEM/SKILLS/campaign-bootstrap/SKILL.md) skill. It supports two routes:
+
+1. **Start from a folder.** Point it at your existing notes, PDFs, transcripts, screenshots, or recordings. It inventories and preserves the material, then creates a local campaign scaffold without pretending that every old note is canon.
+2. **Start with a conversation.** Give it the premise, system, tone, and whatever facts you already know. It asks only the useful follow-up questions, creates the structure, and leaves unknowns open.
+
+Example prompts:
+
+> Use `$campaign-bootstrap` to create `the-quiet-city` from `D:\\RPG\\Quiet City Notes`. Preserve the files as evidence or reference material, and do not create canon from them yet.
+
+> Use `$campaign-bootstrap` to help me start a new Blades in the Dark campaign. I have a rough premise but no notes; ask me the questions you need and set up the local folder when we are done.
+
+The resulting campaign remains local by default. From there, use **Process Session** after play and **Plan Session** before the next session.
+
 ## The main ways to use it
 
 ### Process a played session
@@ -100,20 +115,24 @@ Example prompt:
 
 ### Add an NPC without forcing them into canon
 
-[Suggest NPC](COMMANDS/SUGGEST_NPC.md) creates grounded options from the location, factions, current pressure, and tone. An NPC suggestion is just a suggestion until they appear in play and later pass through the normal truth pipeline.
+[Suggest NPC](COMMANDS/SUGGEST_NPC.md) creates grounded quick options from the location, factions, current pressure, and tone. For a recurring or more fully realised character, use [Create NPC](COMMANDS/CREATE_NPC.md): it can guide you through voice, attitude, party ties, appearance, age, ancestry, motives, and introduction hooks, while letting you skip or delegate any detail.
 
 Example prompt:
 
 > Suggest three recurring NPCs for a dockside investigation. I need one ally, one complication, and one person whose motives are hard to read. Keep them distinct from the people already in canon.
 
+> Use `$npc-creator` to develop the harbour-master concept. Ask me about the details that matter, decide the rest, and keep the result as working prep.
+
 ## Skills
 
 Skills are optional, task-focused assistants that sit on top of the repository's Markdown rules. They help an AI load the right amount of context and produce a consistent kind of result; they do not replace the truth pipeline or grant permission to change canon.
 
-The repository currently includes ten skills:
+The repository currently includes twelve skills:
 
 | Skill | Best for | What it gives you |
 | --- | --- | --- |
+| [`campaign-bootstrap`](SYSTEM/SKILLS/campaign-bootstrap/SKILL.md) | Starting a campaign from existing material or an idea | A local scaffold, preserved sources or setup facts, and a clear first next step without automatic canon. |
+| [`npc-creator`](SYSTEM/SKILLS/npc-creator/SKILL.md) | Designing a memorable NPC collaboratively or from a brief | A grounded working design with voice, motives, party ties, practical details, and optional introduction hooks. |
 | [`process-session`](SYSTEM/SKILLS/process-session/SKILL.md) | Turning real session material into a safe processing packet | Source preservation, session observations, draft events, a pending change set, and a report. |
 | [`session-prep`](SYSTEM/SKILLS/session-prep/SKILL.md) | Drafting, revising, or pressure-testing future sessions | Grounded prep packets, hooks, spotlight beats, continuity guardrails, and short campaign digests. |
 | [`campaign-qa`](SYSTEM/SKILLS/campaign-qa/SKILL.md) | Checking continuity and narrative pressure | Contradictions, repeated clues, knowledge leaks, dangling threads, and prep risks. |
@@ -136,6 +155,8 @@ The repository currently includes ten skills:
 > Rehearse how Captain Olan might respond if the party produces the forged ledger. Stay within his established knowledge and tell me where the simulation becomes speculative.
 
 ## Starting a new campaign
+
+Use the Quick Start above if you have existing material or prefer a guided setup. For a manual setup:
 
 1. Create `CAMPAIGNS/<your-campaign-id>/`.
 2. Add a `CAMPAIGN.md` using [the campaign template](TEMPLATES/CAMPAIGN.template.md).
@@ -162,7 +183,7 @@ The fuller operating contract lives in [AI Runtime](SYSTEM/AI_RUNTIME.md), and t
 
 ## Safe experimentation
 
-Use `TESTS/skills/<skill-name>/` to rehearse a workflow against fake notes, simulated play, or a narrow slice of campaign material. Fixtures go in `fixtures/`; results go in `runs/`.
+Use `TESTS/skills/<skill-name>/` to rehearse a workflow against fake notes, simulated play, or deliberately shared material. Fixtures go in `fixtures/`; results go in `runs/` and remain local by default.
 
 Tests can be imaginative. They just should not quietly write their inventions into `CANON/` or `STATE/`. See the [skill test guide](TESTS/skills/README.md) for the review ladder used in this repository.
 

@@ -128,7 +128,7 @@ For digest mode, compress this into a one-page equivalent.
 
 - Prep is never canon.
 - Use approved canon as baseline and mark speculative ideas clearly.
-- Keep Brann-like anchor NPCs from solving the session for the party.
+- Keep anchor NPCs from solving the session for the party.
 - Do not let one open mystery swallow every city-facing thread unless the user explicitly wants a single-master-conspiracy structure.
 - If `campaign-qa` flags knowledge-boundary risks, carry those into prep as explicit guardrails.
 - If a useful idea depends on unresolved canon, mark it as contingent.
@@ -140,7 +140,7 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/session-prep/fixtures/`
 - prep packets and digests live under `TESTS/skills/session-prep/runs/`
 
-For this campaign, a strong first packet will usually draw from:
+For a strong rehearsal packet, draw from:
 
 - `STATE/current-world.md`
 - `STATE/current-party.md`

@@ -124,9 +124,4 @@ For local rehearsals in this repo:
 - fixtures live under `TESTS/skills/campaign-health/fixtures/`
 - health snapshots live under `TESTS/skills/campaign-health/runs/`
 
-For this campaign, a strong first rehearsal should inspect the transition from Session 5 into Session 6 because it tests:
-
-- post-prologue reset stability
-- recurring NPC bench growth
-- whether Emon is ready to carry grounded play
-- whether Time Agency and Arven pressure are being kept in proportion
+Use anonymized fixtures that exercise recurring cast depth, open-mystery load, consequence pacing, and prep readiness.

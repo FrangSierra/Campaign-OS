@@ -2,50 +2,18 @@
 
 ## Purpose
 
-Generate one or more grounded NPC options for a location, mystery, faction, or session-plan need.
+Generate fast, grounded NPC concepts for an immediate campaign need without opening the full character-design flow.
 
-## Inputs
+## Procedure
 
-- `campaign_ref`
-- optional `plan_ref`
-- desired NPC role or scene function
-- optional location, organization, tone, age, recurrence, or pressure to add
-
-## Outputs
-
-- read-only NPC suggestions
-- optional updates to the active session-planning Working Record
-
-## Dependencies
-
-- [WORKING_RECORD.md](/Users/durdin/Projects/Durdin/tal-dore-tales/SPECIFICATIONS/WORKING_RECORD.md)
-
-## Files Read
-
-- relevant `STATE/` records
-- relevant Entity and Relationship records
-- relevant open Working Records
-- optional active session-planning Working Record
-
-## Files Written
-
-- none by default
-- optional update to a session-planning Working Record
-
-## Approval
-
-- none for read-only suggestions
-- explicit request required before persisting suggestions into a Working Record
-
-## Constraints
-
-- each NPC suggestion should explain its role, angle, and likely usefulness
-- suggested NPCs should fit the campaign's current tone and geography
-- suggestions should reference relevant existing people, factions, mysteries, or places when that makes them stronger
-- the task may recommend reusing or reframing an existing NPC instead of inventing a new one
+1. Load only the context needed to understand the scene, faction, location, and existing NPC roster.
+2. Offer a small number of distinct options or recommend an existing NPC to reuse.
+3. State each concept's scene role, pressure, and reason it fits the campaign.
+4. If the user wants personality, voice, party ties, appearance, age, ancestry, or introduction hooks in depth, hand off to `CREATE_NPC` and `npc-creator`.
+5. Keep every suggestion non-canonical unless the user explicitly asks to save it in `WORKING/`.
 
 ## Failure
 
-- NPC suggestion is generic and detached from campaign context
-- suggestion duplicates a current NPC without purpose
-- speculative NPC details are treated as established canon
+- generic concepts disconnected from campaign context;
+- duplication without a deliberate reason;
+- detailed invented biography presented as established truth.

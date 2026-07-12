@@ -1,0 +1,9 @@
+# Keep live campaign material local by default.
+/CAMPAIGNS/*/
+
+# Skill rehearsal artifacts may contain private campaign context.
+/TESTS/skills/*/fixtures/*
+/TESTS/skills/*/runs/*
+
+# Keep repository documentation visible.
+!/CAMPAIGNS/README.md

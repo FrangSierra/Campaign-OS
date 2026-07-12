@@ -78,7 +78,7 @@ Rules:
 
 - Keep evidence, observation, interpretation, and canon separate.
 - Never import prep-only material as played truth unless the supplied input says it happened.
-- Approved future-facing entities such as Brann Copperthumb or Ivy may be referenced as existing people, but their scene details still require played evidence before canon changes.
+- Approved future-facing entities may be referenced as existing people, but their scene details still require played evidence before canon changes.
 - If the input is partial, contradictory, or secondhand, lower confidence and carry the uncertainty into the Session or Working Record.
 - When in doubt, prefer fewer Event proposals with stronger provenance over a complete-sounding but weak packet.
 
