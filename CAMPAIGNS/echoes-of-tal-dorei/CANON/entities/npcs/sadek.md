@@ -4,8 +4,8 @@ record_type: entity
 schema_version: 1.0.0
 lifecycle_state: active
 created_at: 2026-07-10T00:00:00+02:00
-updated_at: 2026-07-10T21:10:00+02:00
-provenance: initialized during campaign scaffold generation; updated by approved Session 1, Session 2, and Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10
+updated_at: 2026-07-10T22:10:08+02:00
+provenance: initialized during campaign scaffold generation; updated by approved Session 1, Session 2, and Session 3 canonization on 2026-07-10; updated by approved Session 4 canonization on 2026-07-10; updated by approved Session 5 canonization on 2026-07-10; personality clarified by explicit human approval on 2026-07-10
 campaign_ref: campaign-echoes-of-tal-dorei
 entity_kind: npc
 primary_name: Sadek
@@ -37,6 +37,10 @@ Early ally who recognizes when reality is wrong, has now survived the collapsed 
 ## Relationships
 
 - Companion of Perry the Parrot.
+
+## Personality
+
+Sadek is stubborn, blunt, and quick with teasing banter. He can be rough around the edges and tends not to dwell on abstract or philosophical questions, but he is fundamentally warm-hearted and loyal to the people he considers his own.
 
 ## Timeline
 
